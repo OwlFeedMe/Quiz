@@ -18,25 +18,17 @@ body {
 </head>
 <body>
     <div align="center" style="margin-top: 50px;">
-        <form action="CrunchifyServlet">
-           Id Depto:  <input type="text" name="id" size="20px"> <br>
-           Nombre Depto:  <input type="text" name="nombre" size="20px"> <br><br>
+        <form action="HelloCrunchify">
+           Nombre:  <input type="text" name="nombre" size="20px"> <br>
+           Descripcion:  <input type="text" name="Descripcon" size="20px"> <br>
+           Estilo:  <input type="text" name="estilo" size="20px"> <br>
+           valor:  <input type="text" name="valor" size="20px"> <br>
+           <br>
         <input type="submit" value="submit">
         </form>
      </div>
  
-    <%
-       if( request.getAttribute("departamentos")!=null){
-          List<Departamento> departamentos  = (List<Departamento>)request.getAttribute("departamentos");
-           for (Departamento departamento : departamentos) {
-         %>      
-         <h1> <%=departamento.getNom_departamento()%> </h1><br/> 
-         <%      
-          }
-       }
-      
     
-    %>
     <img src="ChartServlet" />
 </body>
 </html>
