@@ -28,7 +28,7 @@ import java.util.logging.Logger;
  */
  
 
-public class Obras_de_ArteDAO implements IBaseDatos<Obra_de_Arte> {
+public class ObrasArteDAO implements IBaseDatos<Obra_de_Arte> {
 
     @Override
     public List<Obra_de_Arte> findAll() {
@@ -42,7 +42,7 @@ public class Obras_de_ArteDAO implements IBaseDatos<Obra_de_Arte> {
             try {
                 connection = Conexion.getConnection();
             } catch (URISyntaxException ex) {
-                Logger.getLogger(Obras_de_ArteDAO.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(ObrasArteDAO.class.getName()).log(Level.SEVERE, null, ex);
             }
 	    String query = " insert into Obra_de_Arte (Nombre,Descripcion,Estilo,Valor)"  + " values (?,?,?,?)";
         PreparedStatement preparedStmt=null;

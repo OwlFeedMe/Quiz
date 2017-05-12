@@ -9,14 +9,14 @@ package edu.co.sergio.mundo.vo;
  *
  * @author Labing
  */
-public class Obra_de_Arte {
+public class ObraArte {
     
     private String nombre;
     private String  descripcion;
     private String estilo;
     private int valor;
 
-    public Obra_de_Arte(String nombre, String descripcion, String estilo, int valor) {
+    public ObraArte(String nombre, String descripcion, String estilo, int valor) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.estilo = estilo;
