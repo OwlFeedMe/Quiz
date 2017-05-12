@@ -23,9 +23,9 @@ public class HelloCrunchify extends HttpServlet {
         int valor = Integer.valueOf(request.getParameter("valor"));
 
         //Se debe incluir validaciones - Lo recuerda: Gestion de Excepciones.
-        Obras_de_ArteDAO c=new Obras_de_ArteDAO();
+        ObrasArteDAO c=new ObrasArteDAO();
         
-        Obra_de_Arte ob = new Obra_de_Arte(nombre, descripcion, estilo, 0);
+        ObraArte ob = new ObraArte(nombre, descripcion, estilo, 0);
         c.insert(ob);
         
         
