@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-import edu.co.sergio.mundo.vo.Obra_de_Arte;
+import edu.co.sergio.mundo.vo.ObraArte;
 import java.net.URISyntaxException;
 import java.util.Hashtable;
 import java.util.LinkedList;
@@ -28,15 +28,15 @@ import java.util.logging.Logger;
  */
  
 
-public class ObrasArteDAO implements IBaseDatos<Obra_de_Arte> {
+public class ObrasArteDAO implements IBaseDatos<ObraArte> {
 
     @Override
-    public List<Obra_de_Arte> findAll() {
+    public List<ObraArte> findAll() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public boolean insert(Obra_de_Arte t) {
+    public boolean insert(ObraArte t) {
         boolean result=false;
 		Connection connection=null;
             try {
@@ -44,7 +44,7 @@ public class ObrasArteDAO implements IBaseDatos<Obra_de_Arte> {
             } catch (URISyntaxException ex) {
                 Logger.getLogger(ObrasArteDAO.class.getName()).log(Level.SEVERE, null, ex);
             }
-	    String query = " insert into Obra_de_Arte (Nombre,Descripcion,Estilo,Valor)"  + " values (?,?,?,?)";
+	    String query = " insert into ObraArte (Nombre,Descripcion,Estilo,Valor)"  + " values (?,?,?,?)";
         PreparedStatement preparedStmt=null;
 	    try {
 			preparedStmt = connection.prepareStatement(query);
@@ -60,12 +60,12 @@ public class ObrasArteDAO implements IBaseDatos<Obra_de_Arte> {
    }
 
     @Override
-    public boolean update(Obra_de_Arte t) {
+    public boolean update(ObraArte t) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public boolean delete(Obra_de_Arte t) {
+    public boolean delete(ObraArte t) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

@@ -1,7 +1,7 @@
 package com.crunchify.jsp.servlet;
  
-import edu.co.sergio.mundo.dao.Obras_de_ArteDAO;
-import edu.co.sergio.mundo.vo.Obra_de_Arte;
+import edu.co.sergio.mundo.dao.ObrasArteDAO;
+import edu.co.sergio.mundo.vo.ObraArte;
 import java.io.IOException;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
